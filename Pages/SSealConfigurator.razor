@@ -1,0 +1,78 @@
+@page "/sseal"
+@using SSealEngine
+@inject SSealEngine Engine
+@using System
+
+<h3>S-Seal Configurator</h3>
+
+<div style="background:#1e1e28;padding:20px;border-radius:8px;color:white;width:500px;">
+    <label>Seal Type:</label>
+    <select @bind="SealType" style="width:100%;margin-bottom:10px;">
+        <option>Face Seal - Internal Pressure</option>
+        <option>Face Seal - External Pressure</option>
+        <option>Flange Seal</option>
+    </select>
+
+    <label>Bore Ø (mm):</label>
+    <input type="number" @bind="Bore" style="width:100%;margin-bottom:10px;" />
+
+    <label>Groove Width (mm):</label>
+    <input type="number" @bind="Groove" step="0.1" style="width:100%;margin-bottom:10px;" />
+
+    <label>Medium:</label>
+    <select @bind="Medium" style="width:100%;margin-bottom:10px;">
+        <option>Hydraulic Oil</option>
+        <option>Water</option>
+        <option>Steam</option>
+        <option>Brake Fluid</option>
+    </select>
+
+    <label>Max Temp (°C):</label>
+    <input type="number" @bind="Temp" style="width:100%;margin-bottom:10px;" />
+
+    <button @onclick="CalculateSeal" style="background:#007ACC;color:white;padding:10px 20px;border:none;border-radius:5px;margin-top:10px;">
+        Calculate Seal
+    </button>
+</div>
+
+@if (!string.IsNullOrEmpty(ResultText))
+{
+    <div style="background:#282830;padding:20px;margin-top:20px;border-radius:8px;color:lime;font-family:Consolas;">
+        <pre>@ResultText</pre>
+    </div>
+}
+
+@code {
+    private string SealType { get; set; } = "Face Seal - Internal Pressure";
+    private double Bore { get; set; } = 100;
+    private double Groove { get; set; } = 4.0;
+    private string Medium { get; set; } = "Hydraulic Oil";
+    private int Temp { get; set; } = 120;
+
+    private string ResultText = "";
+
+    private void CalculateSeal()
+    {
+        var seal = Engine.RecommendSeal(Bore, Groove, Temp, Medium);
+        if (seal == null)
+        {
+            ResultText = "No matching seal found!";
+            return;
+        }
+
+        var grooveDia = Engine.CalculateGrooveDiameter(Bore, SealType);
+        var squeeze = Engine.GenerateSqueezePercent(seal, Groove);
+        var stretch = Math.Abs((Bore - seal.ID_mm) / seal.ID_mm * 100.0);
+        var material = Temp > 150 ? "FFKM" : Temp > 100 ? "FKM" : "NBR";
+        var chem = Engine.GetChemicalRating(Medium, material);
+
+        ResultText = $"RECOMMENDED S-SEAL\n\n" +
+                     $"Part Number      : {seal.PartNumber}\n" +
+                     $"Material         : {material}\n" +
+                     $"Groove Ø         : {grooveDia:F3} mm\n" +
+                     $"Squeeze          : {squeeze:F2}%\n" +
+                     $"Stretch          : {stretch:F2}%\n" +
+                     $"Chemical Rating  : {chem}\n\n" +
+                     $"Status           : {(squeeze >= 10 && squeeze <= 20 ? "OPTIMAL" : "REVIEW DESIGN")}";
+    }
+}
