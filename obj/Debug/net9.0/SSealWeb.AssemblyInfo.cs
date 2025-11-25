@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SSealWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b25b8ca9db97e2366ef5ff878f79c44fd56f047")]
 [assembly: System.Reflection.AssemblyProductAttribute("SSealWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SSealWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
