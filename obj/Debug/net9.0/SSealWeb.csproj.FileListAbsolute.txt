@@ -814,8 +814,6 @@ C:\Dev\SSealWeb\obj\Debug\net9.0\scopedcss\bundle\SSealWeb.styles.css
 C:\Dev\SSealWeb\obj\Debug\net9.0\scopedcss\projectbundle\SSealWeb.bundle.scp.css
 C:\Dev\SSealWeb\obj\Debug\net9.0\blazor.build.boot-extension.json
 C:\Dev\SSealWeb\obj\Debug\net9.0\blazor.boot.json
-C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\q0nlaugvet-8rbvw3on5j.gz
-C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\usguya759k-tsa7ibknre.gz
 C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\97w7sh7u2r-c2jlpeoesf.gz
 C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\1chpdpag1y-aexeepp0ev.gz
 C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\8kjcwazhnd-ausgxo2sd3.gz
@@ -1051,10 +1049,6 @@ C:\Dev\SSealWeb\obj\Debug\net9.0\SSealWeb.dll
 C:\Dev\SSealWeb\obj\Debug\net9.0\refint\SSealWeb.dll
 C:\Dev\SSealWeb\obj\Debug\net9.0\SSealWeb.pdb
 C:\Dev\SSealWeb\obj\Debug\net9.0\ref\SSealWeb.dll
-C:\Dev\SSealWeb\bin\Debug\net9.0\wwwroot\_framework\SSealWeb.lu2n8ia8yt.wasm
-C:\Dev\SSealWeb\bin\Debug\net9.0\wwwroot\_framework\SSealWeb.vsr0wx75t7.pdb
-C:\Dev\SSealWeb\bin\Debug\net9.0\wwwroot\_framework\SSealWeb.lu2n8ia8yt.wasm.gz
-C:\Dev\SSealWeb\bin\Debug\net9.0\wwwroot\_framework\SSealWeb.vsr0wx75t7.pdb.gz
 C:\Dev\SSealWeb\obj\Debug\net9.0\SSealWeb.sourcelink.json
 C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\clyxz0naxz-t1cqhe9u97.gz
 C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\cqzaqwuwem-sejl45xvog.gz
@@ -1078,6 +1072,12 @@ C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\dr413kp7yw-n0ras5kju9.gz
 C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\7jolqxs6fp-8vyfqsqgz1.gz
 C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\7sjnexz2ai-e0a92fb3w3.gz
 C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\6axhzzglb9-4d85u1mtcx.gz
-C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\nkb04tasli-lu2n8ia8yt.gz
-C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\x1zoxk42qk-vsr0wx75t7.gz
-C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\cyrbj7mxpx-tt5g16mmmv.gz
+C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\q0nlaugvet-a92dzwx655.gz
+C:\Dev\SSealWeb\bin\Debug\net9.0\wwwroot\_framework\SSealWeb.2t71w95u79.wasm
+C:\Dev\SSealWeb\bin\Debug\net9.0\wwwroot\_framework\SSealWeb.dralvaf6ae.pdb
+C:\Dev\SSealWeb\bin\Debug\net9.0\wwwroot\_framework\SSealWeb.2t71w95u79.wasm.gz
+C:\Dev\SSealWeb\bin\Debug\net9.0\wwwroot\_framework\SSealWeb.dralvaf6ae.pdb.gz
+C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\usguya759k-b6oecgdrha.gz
+C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\nkb04tasli-2t71w95u79.gz
+C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\x1zoxk42qk-dralvaf6ae.gz
+C:\Dev\SSealWeb\obj\Debug\net9.0\compressed\cyrbj7mxpx-hxguajpls9.gz
